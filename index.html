@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/ramda/0.22.1/ramda.min.js"></script>
+      <script src="polyfill.js"></script>
+      <script src="square.js"></script>
+      <script src="snake.js"></script>
+  </head>
+
+  <body>
+    <div style="display:table;width:100%;">
+      <div style="display:table-row">
+        <div style="display:table-cell;width:19%;position:relative">
+          <div style="position:absolute;top:0;">
+            <h3>Snake</h3>
+            <p>Score : <span id="score">0</span></p>
+          </div>
+        </div>
+        <div style="display:table-cell;width:80%;">
+          <canvas id="snakePit" width="500" height="500"
+                  style="border: 1px solid black;
+                         margin-left:12%;"
+                  tabindex="1">
+          </canvas>
+        </div>
+      </div>
+    </div>
+
+    <!-- put this down here so the DOM is fully rendered -->
+    <script src="main.js"></script>
+  </body>
+</html>
